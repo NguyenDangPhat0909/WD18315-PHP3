@@ -14,7 +14,7 @@
         HÃNG
         <select name="category_id" id="">
             @foreach ($category as $item)
-            <option value="{{ $item->id }}" {{ $data->category_id == $item->id ? 'selected' : '' }}>{{ $item->namecy }}</option>
+                <option value="{{ $item->id }}" {{ $data->category_id == $item->id ? 'selected' : '' }}>{{ $item->namecy }}</option>
             @endforeach
         </select><br>
         SỐ LƯỢT XEM: <input type="text" name="view" value="{{$data->view}}"><br>

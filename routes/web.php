@@ -66,3 +66,7 @@ Route::group(['as' => 'products.'], function(){
     Route::get('/{id}/edit', [productController::class, 'editProducts'])->name('editProducts');
     Route::patch('/{id}', [productController::class, 'updateProducts'])->name('updateProducts');
 });
+
+Route::get('test', function(){
+    return view('admin.products.list-product');
+});
